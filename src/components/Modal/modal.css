@@ -1,0 +1,27 @@
+.modal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    transform: scale(0)
+}
+.modal.active {
+    transform: scale(1);
+}
+
+.modal_content {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 350px;
+    width: 450px;  
+    color: black; 
+}
+.modal_content input {
+    color: black;
+}

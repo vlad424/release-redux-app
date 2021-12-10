@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #28282A;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+}
+.left__side {
+    display: flex;  
+    width: 25vh;
+    background-color: #252526;
+    flex-direction: column;
+}
+.right__side {
+    display: flex;
+    width: 100%;
+}
+.PostsBar {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+}
+.modal_btn {
+    width: 25px;
+    height: 25px;
+    background-color: #28282A;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.modal_btn:hover {
+    background-color: white;
+    color: #28282A;
+    cursor: pointer;
+}

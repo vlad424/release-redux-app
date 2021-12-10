@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Modal from './components/Modal/Modal';
+import PostsBar from './components/PostsBar';
+import SideBar from './components/SideBar';
+import './style/app.css'
 
 function App() {
+  const [active, setActive] = useState(false)
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header></header>
+      <div className="main">
+        <aside className="left__side">
+          <SideBar/>
+        </aside>
+        <aside className="right__side">
+          <PostsBar/>
+          <button className="modal_btn" onClick={() => setActive(true)}>+</button>
+        </aside>
+      </div>
+      <div className="footer">
+
+      </div>
+      <Modal active={active} setActive={setActive}/>
     </div>
   );
 }
