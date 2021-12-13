@@ -43,3 +43,22 @@ body {
     color: #28282A;
     cursor: pointer;
 }
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+.post {
+    margin-top: 15px;
+}
+
+.SideBar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.SideBar h1 {
+    margin-bottom: 5px;
+}
+.SideBar span {
+    margin-top: 5px;
+}

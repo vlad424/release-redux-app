@@ -1,22 +1,21 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { useSelector } from "react-redux";
 
 const SideBar = () => {
-    const posts = useSelector(state => state.posts)
-    
-    console.log(posts)
+  const posts = useSelector((state) => state.posts);
 
-    return(
-        <div className="SideBar">
-            {posts.lenght > 0 ?
-                posts.map(post => (
-                    <span>{post.content}</span>
-                ))
-                :
-                    <span>nothing</span>
-            }
-        </div>
-    );
-}
+  console.log(posts.length);
 
-export default SideBar
+  return (
+    <div className="SideBar">
+      <h1>TASKS</h1>
+      {posts.length ? (
+        posts.map((post) => <span>{post.content}</span>)
+      ) : (
+        <span> nothing </span>
+      )}
+    </div>
+  );
+};
+
+export default SideBar;
